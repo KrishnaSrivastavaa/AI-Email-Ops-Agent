@@ -28,8 +28,6 @@ class CallbackHandler(BaseHTTPRequestHandler):
 
 
 def main():
-    server = HTTPServer(("localhost", 8080), CallbackHandler)
-    server.handle_request()
     flow = Flow.from_client_config(
         {
         "web": {
